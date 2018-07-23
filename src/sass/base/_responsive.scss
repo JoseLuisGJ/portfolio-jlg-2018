@@ -1,0 +1,455 @@
+/////////////////////////////////
+
+/* Large Devices, Wide Screens */
+
+/////////////////////////////////
+@media only screen and (max-width: 1200px) {
+    #intro {
+        .aboutMeInfo {
+            .contacto {
+                padding-top: 65px;
+            }
+        }
+    }
+    #proyecto-aguas-bloque3 {
+        #img-app-aguas1,
+        #img-app-aguas2,
+        #img-app-aguas3 {
+            // @include transform(scale(0.9));
+        }
+    }
+}
+
+//////////////////////////////
+
+/* Medium Devices, Desktops */
+
+//////////////////////////////
+@media only screen and (max-width: 992px) {
+    #intro {
+        .introContent {
+            .claim {
+                h1 {
+                    font-size: 45px;
+                    line-height: 60px;
+                }
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+        #closeAboutSVG {
+            top: 27px;
+            left: auto;
+            right: 15px;
+            width: 30px;
+        }
+        .aboutMeInfo {
+            h2 {
+                font-size: 50px;
+            }
+            p.lead {
+                font-size: 22px;
+                margin-bottom: 12px;
+            }
+            .infoLarga {
+                font-size: 18px;
+            }
+            .contacto {
+                padding-top: 35px;
+                .emailAbout {
+                    font-size: 18px;
+                }
+                .social {
+                    a {
+                        margin-left: 4px;
+                    }
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    #precargador {
+        .cont {
+            .barra {}
+            h4 {
+                font-size: 40px;
+            }
+        }
+    }
+    .descripcion-proyecto {
+        h2 {
+            font-size: 40px;
+            margin-bottom: 0px;
+            margin-top: 60px;
+        }
+        h3 {
+            font-size: 30px;
+            margin-top: 8px;
+            margin-bottom: 55px;
+        }
+        ul {
+            font-size: 18px;
+        }
+        img {
+            width: 400px;
+            bottom: -40px;
+            right: -30px;
+        }
+        ul {
+            &.urls {
+                margin-top: 30px;
+                margin-bottom: 80px;
+                font-size: 18px;
+            }
+        }
+    }
+    #proyecto-aguas-bloque3 {
+        #img-app-aguas1,
+        #img-app-aguas2,
+        #img-app-aguas3 {
+            // @include transform(scale(0.68));
+        }
+    }
+    #proyecto-aguas-bloque5 {
+        &.energy-bloque {
+            .energy-img {
+                @include transform(translate(-15px, 0));
+            }
+        }
+    }
+    #menuProyectos {
+        #closeSVG {
+            left: 50%;
+            @include transform(translateX(-50%));
+            top: 60px;
+        }
+        ul {
+            li {
+                // width: 100%;
+                a {
+                    font-size: 52px;
+                }
+            }
+        }
+    }
+}
+
+////////////////////////////
+
+/* Small Devices, Tablets */
+
+////////////////////////////
+@media only screen and (max-width: 768px) {
+    #breadcrumbs {
+        display: none;
+    }
+    #flechaSubir {
+        bottom: 0px;
+        svg {
+            top: -130px;
+        }
+        h4 {
+            display: none;
+        }
+    }
+    #intro {
+        .aboutMeInfo {
+            left: 0;
+            top: 0;
+            @include transform(translate(0, 0));
+            position: relative;
+            display: none;
+        }
+        position: relative;
+        .lineaCerrar {
+            left: 50%;
+        }
+        .scrollDown {
+            @include transform(rotate(0deg) translateX(-50%));
+            left: 50%;
+            bottom: 75px;
+        }
+        .aboutMeBtn {
+            /* About me: */
+            @include transform(rotate(0deg) translateX(-50%));
+            left: 50%;
+            top: 75px;
+        }
+    }
+    .descripcion-proyecto {
+        min-height: 100vh;
+        height: auto;
+        h2 {
+            font-size: 35px;
+        }
+        h3 {
+            font-size: 26px;
+        }
+        img {
+            width: 400px;
+            bottom: -120px;
+            right: -80px;
+        }
+    }
+    .descripcion {
+        margin-top: 40px;
+        padding-bottom: 40px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .fondoGrisBlanco {
+        height: auto;
+    }
+    .fondoBlanco {
+        padding-top: 70px;
+        height: auto;
+        .energyMod1 {
+            margin-top: -17px;
+            .img-logo {
+                text-align: center;
+                img {
+                    width: 45%;
+                }
+            }
+        }
+        .energyMod2 {
+            z-index: 3;
+            margin-top: -60px;
+        }
+        .energyMod3 {
+            margin-top: -40%;
+            //transform: translateY(-70%);
+        }
+        .energyMod4 {
+            @include transform(translateY(55px));
+            ///margin-top: -350px;
+            z-index: 5;
+            margin-top: -23%;
+            &.img-mobile {
+                img {
+                    width: 36%;
+                }
+            }
+        }
+        &.fondoEnergy {
+            height: auto;
+        }
+        &.fondoZeendo {
+            height: auto;
+            padding-bottom: 30px;
+        }
+        &.fondoMuchosol {
+            height: auto;
+        }
+    }
+    .fondoAzul {
+        z-index: 1;
+    }
+    #proyecto-aguas-bloque3 {
+        #img-app-aguas1,
+        #img-app-aguas2,
+        #img-app-aguas3 {
+            //@include transform(scale(0.7));
+        }
+    }
+    #proyecto-aguas-bloque4 {
+        .contScreensApp {
+            //width: 160%;
+            @include transform(scale(1.5));
+            #img-screens-aguas1,
+            #img-screens-aguas2 {}
+        }
+    }
+    #proyecto-aguas-bloque5 {
+        margin-bottom: 100px;
+        height: auto;
+        .vertical-bottom {
+            display: inline-block;
+            height: auto;
+        }
+        p {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        h3 {
+            margin-top: 45px;
+        }
+        #obj-appear2 {
+            margin-bottom: -10px;
+        }
+        &.energy-bloque {
+            h3 {
+                margin-top: 45px;
+            }
+            p {
+                margin-bottom: 40px;
+            }
+            .energy-img {
+                @include transform(translate(-15px, 0));
+            }
+        }
+        &.zeendo-bloque {
+            height: auto;
+            min-height: 100vh;
+            h3 {
+                margin-top: 45px;
+            }
+            p {}
+            #zeendo-comp {
+                left: 0;
+                width: 80%;
+            }
+            #texto-zeendo-comp {}
+        }
+        &.muchosol-bloque {
+            height: auto;
+            min-height: 100vh;
+            .vertical-bottom {
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+            }
+            h3 {}
+            p {
+                margin-bottom: 15px;
+            }
+            #muchosol-comp {
+                width: 94%;
+            }
+            #texto-muchosol-comp {}
+        }
+    }
+    #bloque-fin-proyecto {
+        height: 100px;
+        h5 {
+            font-size: 18px;
+            margin-top: 24px;
+            margin-left: 30px;
+            margin-bottom: -3px;
+        }
+        h3 {
+            font-size: 31px;
+            margin-top: 3px;
+            margin-left: 30px;
+            &:before {
+                top: 65px;
+                left: 0;
+            }
+        }
+    }
+    #proyecto-aguas-bloque3 {
+        #img-app-aguas1 {
+            left: 0;
+            top: 35%;
+            width: 90%;
+        }
+        #img-app-aguas2 {
+            left: -20px;
+            top: 20%;
+            width: 90%;
+        }
+        #img-app-aguas3 {
+            left: 30%;
+            top: 15%;
+            width: 60%;
+        }
+    }
+    #menuProyectos {
+        #closeSVG {
+            left: 50%;
+            @include transform(translateX(-50%));
+            top: 60px;
+        }
+        ul {
+            padding: 0;
+            li {
+                width: 100%;
+                margin-left: calc(50% - 0px);
+                a {
+                    font-size: 28px;
+                }
+                &.active {
+                    .barra {
+                        left: 50%;
+                        width: 91%;
+                        @include transform(translateX(-50%));
+                    }
+                }
+            }
+        }
+    }
+}
+
+/////////////////////////////////
+
+/* Extra Small Devices, Phones */
+
+/////////////////////////////////
+@media only screen and (max-width: 480px) {
+    #intro {
+        .introContent {
+            .claim {
+                h1 {
+                    font-size: 38px;
+                    line-height: 44px;
+                }
+                h2 {
+                    font-size: 24px;
+                }
+            }
+        }
+        .aboutMeInfo {
+            h2 {
+                font-size: 35px;
+                margin-bottom: 15px;
+            }
+            p.lead {
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 6px;
+            }
+            .infoLarga {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .contacto {
+                padding-top: 20px;
+                .emailAbout {
+                    font-size: 16px;
+                }
+                .social {
+                    a {
+                        margin-left: 0px;
+                        padding: 5px;
+                    }
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    .descripcion-proyecto {
+        img {
+            width: 220px;
+            bottom: 70px;
+            right: -50px;
+        }
+    }
+    .fondoBlanco {
+        height: auto;
+    }
+    #menuProyectos {
+        #closeSVG {
+            left: 50%;
+            @include transform(translateX(-50%) scale(0.8));
+        }
+    }
+}
+
+///////////////////////////
+
+/* Custom, iPhone Retina */
+
+///////////////////////////
+@media only screen and (max-width: 320px) {}

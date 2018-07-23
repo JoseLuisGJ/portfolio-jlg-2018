@@ -1,0 +1,11 @@
+AddType video/ogg .ogv
+AddType audio/ogg .ogg
+AddType video/ogg .ogv 
+AddType video/mp4 .mp4 
+AddType video/webm .webm
+# Add correct content-type for fonts 
+AddType application/vnd.ms-fontobject .eot
+AddType font/ttf .ttf
+AddType font/otf .otf
+AddType font/x-woff .woff
+AddType image/svg+xml .svg

@@ -1,0 +1,53 @@
+{
+    "livedev.multibrowser": true,
+    "staticserver.address": "0.0.0.0",
+    "sass.enabled": false,
+    "sass.compiler": "libsass",
+    "path": {
+        "src/sass/*.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../../css/",
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": true,
+            "fonts.fontSize": "14px",
+            "brackets-git.gitPath": "git",
+            "bigeyex.bracketsSFTPUpload./Users/jose/Proyectos/Aguas de Valencia/WEB_Aguas_de_Valencia/WebAguasValencia/|changed_files": {
+                "/Users/jose/Proyectos/Aguas de Valencia/WEB_Aguas_de_Valencia/WebAguasValencia/ov-mi-cuenta.html": 1,
+                "/Users/jose/Proyectos/Aguas de Valencia/WEB_Aguas_de_Valencia/WebAguasValencia/ov-inicio.html": 1,
+                "/Users/jose/Proyectos/Aguas de Valencia/WEB_Aguas_de_Valencia/WebAguasValencia/js/theme.js": 1,
+                "/Users/jose/Proyectos/Aguas de Valencia/WEB_Aguas_de_Valencia/WebAguasValencia/master/sass/base/_header.scss": 1,
+                "/Users/jose/Proyectos/Aguas de Valencia/WEB_Aguas_de_Valencia/WebAguasValencia/master/sass/custom.scss": 1,
+                "/Users/jose/Proyectos/Aguas de Valencia/WEB_Aguas_de_Valencia/WebAguasValencia/master/sass/theme-blog.scss": 1,
+                "/Users/jose/Proyectos/Aguas de Valencia/WEB_Aguas_de_Valencia/WebAguasValencia/master/sass/theme-shop.scss": 1
+            },
+            "bigeyex.bracketsSFTPUpload.enabled": false,
+            "bigeyex.bracketsSFTPUpload./Users/jose/Proyectos/Aguas de Valencia/WEB_Aguas_de_Valencia/WebAguasValencia/|server_info": {
+                "method": "ftp",
+                "host": "ftp.lacrafteria.es",
+                "port": "21",
+                "username": "lacrafte",
+                "rsaPath": "",
+                "password": "rW082u4k",
+                "serverPath": "/web/aguas",
+                "uploadOnSave": false
+            },
+            "bigeyex.bracketsSFTPUpload./Users/jose/Proyectos/Jose Luis Gonzalez/Web Portfolio 3.0/WebJose_v2/|changed_files": {
+                "/Users/jose/Proyectos/Jose Luis Gonzalez/Web Portfolio 3.0/WebJose_v2/index.html": 1,
+                "/Users/jose/Proyectos/Jose Luis Gonzalez/Web Portfolio 3.0/WebJose_v2/js/main.js": 1,
+                "/Users/jose/Proyectos/Jose Luis Gonzalez/Web Portfolio 3.0/WebJose_v2/css/main.css": 1,
+                "/Users/jose/Proyectos/Jose Luis Gonzalez/Web Portfolio 3.0/WebJose_v2/css/style.css": 1,
+                "/Users/jose/Proyectos/Jose Luis Gonzalez/Web Portfolio 3.0/WebJose_v2/master/sass/theme.scss": 1,
+                "/Users/jose/Proyectos/Jose Luis Gonzalez/Web Portfolio 3.0/WebJose_v2/master/sass/style.scss": 1,
+                "/Users/jose/Proyectos/Jose Luis Gonzalez/Web Portfolio 3.0/WebJose_v2/src/sass/style.scss": 1
+            }
+        }
+    },
+    "jscodehints.detectedExclusions": [
+        "/Users/jose/Proyectos/Jose Luis Gonzalez/Web Portfolio 3.0/WebJose_v2/js/main.js",
+        "velocity.js"
+    ]
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Últimos trabajos y portfolio personal de José Luis González Jimenez. UX & UI Designer and Frontend Developer.">
+    <link rel="shortcut icon" type="image/png" href="http://www.joseluisgj.com/img/favicon.png" />
+    <title>José Luis González | UX UI Designer & Frontend Developer</title>
+    <link rel="author" href="humans.txt" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,200,100italic,100,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+<!--    <link type="text/css" media="screen" rel="stylesheet" href="awwwards.css" />-->
+    <!--Modrnizr-->
+    <script src="js/vendor/modernizr-custom.js"></script>
+</head>
+
+<body ng-controller="mainCtrl">
+
+    <!--AWWWARDS Ribbon-->
+    <!-- <div id="awwwards" class="nominee white right">
+        <a href="http://www.awwwards.com/sites/jose-luis-gonzalez-portfolio" target="_blank">Awwwards</a>
+    </div>-->
+    <!--Precargador Inicio-->
+
+    <div id="precargador" class="vertical-center">
+        <div class="cont maskText">
+            <div class="barra"></div>
+            <h4>{{ 'SALUDO' | translate }}</h4>
+        </div>
+    </div>
+
+    <!--    Precargador entre pantallas-->
+    <div id="precargador2">
+        <div class="sk-three-bounce">
+            <div class="jota">J</div>
+            <div class="sk-child sk-bounce1"></div>
+        </div>
+    </div>
+    <!-- Migas de pan -->
+    <div id="breadcrumbs">
+        <h4><span class="titulo">Aguas de Valencia</span> <span class="sub"></span></h4>
+    </div>
+    <!-- Botón Menu proyectos -->
+    <div id="menuAllProjects">
+        <h4>{{ 'TODOS' | translate }}</h4>
+    </div>
+    <!--Flecha subir-->
+    <div id="flechaSubir">
+        <svg width="15px" height="260" viewBox="0 0 15 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="flechaSubirSVG" stroke="#979797">
+                <path d="M7.5,0.5 L0.980797589,7.01920223" id="flechaPuntaIzq"></path>
+                <path d="M7.5,0.5 L14.0192022,7.01920223" id="flechaPuntaDer"></path>
+                <path d="M7.5,0.5 L7.5,80.5" id="flechaBase"></path>
+            </g>
+        </svg>
+        <h4>José Luis González</h4>
+    </div>
+    <!--Menu proyectos-->
+    <div id="menuProyectos">
+
+        <svg id="closeSVG" width="45px" height="43px" viewBox="0 0 45 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <g id="close-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                <g id="Desktop-HD---Side-Copy" transform="translate(-681.000000, -108.000000)" stroke="#FFFFFF">
+                    <g id="About-me" transform="translate(210.000000, 31.000000)">
+                        <g id="Group-2" transform="translate(472.000000, 77.000000)">
+                            <path d="M42.9255411,42.9255411 L0,0" id="Line-Copy"></path>
+                            <path d="M0,42.9255411 L42.9255411,7.10542736e-15" id="Line-Copy-2"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+        <ul class="">
+            <li class="active">
+                <div class="barra"></div>
+                <a data-image="proyectos/aguas-de-valencia">Aguas de Valencia</a>
+            </li>
+            <li>
+                <div class="barra"></div>
+                <a data-image="proyectos/energy-system">Energy System</a>
+            </li>
+            <li>
+                <div class="barra"></div>
+                <a data-image="proyectos/zeendo">Zeendo</a>
+            </li>
+            <li>
+                <div class="barra"></div>
+                <a data-image="proyectos/muchosol">Muchosol</a>
+            </li>
+        </ul>
+
+        <div class="fondoMenuImgs">
+            <img data-image="proyectos/aguas-de-valencia" class="object-fit-ie-fix-footer" src="img/proyectos/aguas/aguas-fondo.jpg">
+            <img data-image="proyectos/energy-system" class="object-fit-ie-fix-footer" src="img/proyectos/energy/energy-fondo.jpg">
+            <img data-image="proyectos/zeendo" class="object-fit-ie-fix-footer" src="img/proyectos/zeendo/zeendoo-fondo.jpg">
+            <img data-image="proyectos/muchosol" class="object-fit-ie-fix-footer" src="img/proyectos/muchosol/muchosol-fondo.jpg">
+        </div>
+    </div>
+    <!-- Wrapper general -->
+    <div id="site-wrap">
+        <!-- Sección Jose Luis Gonzalez-->
+        <section id="intro">
+            <div class="imgFondoIntro">
+                <div id="lol">
+                    <img class="hidden" src="img/jose-portrait.jpg">
+                    <img class="hidden" src="img/jose-portrait-depth.jpg">
+                    <canvas></canvas>
+                </div>
+            </div>
+            <div id="lineaCerrar1" class="lineaCerrar"></div>
+            <div id="lineaCerrar2" class="lineaCerrar"></div>
+            <div class="aboutMeBtn"><a href="#">{{ 'ABOUT-TITULO' | translate }}</a></div>
+            <div class="scrollDown"><a href="#">{{ 'SCROLL' | translate }}</a></div>
+
+            <svg id="closeAboutSVG" width="45px" height="43px" viewBox="0 0 45 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                <g id="close-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                    <g id="Desktop-HD---Side-Copy" transform="translate(-681.000000, -108.000000)" stroke="#FFFFFF">
+                        <g id="About-me" transform="translate(210.000000, 31.000000)">
+                            <g id="Group-2" transform="translate(472.000000, 77.000000)">
+                                <path d="M42.9255411,42.9255411 L0,0" id="Line-Copy"></path>
+                                <path d="M0,42.9255411 L42.9255411,7.10542736e-15" id="Line-Copy-2"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+
+            <div class="additionalContent">
+                <div class="introContent">
+                    <div class="claim">
+
+                        <div class="maskText">
+                            <h1><span>{{ 'SOY' | translate }}</span> José Luis González</h1>
+                        </div>
+                        <div class="maskText">
+                            <h2>UX / UI Designer & Frontend Developer</h2>
+                        </div>
+                    </div>
+
+                    <div id="scrollBtn">
+                        <svg width="19px" height="12px" viewBox="0 0 19 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <g id="Dektop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.356110075">
+                                <g id="Desktop-HD---Main" transform="translate(-710.000000, -792.000000)" fill="#D8D8D8">
+                                    <g id="Welcome" transform="translate(132.000000, 0.000000)">
+                                        <g id="Scroll" transform="translate(543.500000, 753.447837)">
+                                            <path d="M35.364726,39.8237741 L35.7658555,39.0788804 L44.4385702,49.021345 L53.1112849,39.0788804 L53.5124144,39.8237741 L44.5055912,50.1492632 L44.4544269,50.2442748 L44.3715492,50.1492632 L35.364726,39.8237741 Z" id="Combined-Shape"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="aboutMeInfo">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-10 col-md-offset-1">
+                                <h2>{{ 'ABOUT-TITULO' | translate }}</h2>
+                                <p class="lead" data-ng-bind-html="'ABOUT-CONT-1' | translate | htmlSafe"></p>
+                            </div>
+                        </div>
+                        <div class="row infoLarga">
+                            <div class="col-md-4" data-ng-bind-html="'ABOUT-CONT-2' | translate | htmlSafe"></div>
+                            <div class="col-md-4" data-ng-bind-html="'ABOUT-CONT-3' | translate | htmlSafe"></div>
+                            <div class="col-md-4" data-ng-bind-html="'ABOUT-CONT-4' | translate | htmlSafe"></div>
+                        </div>
+                        <div class="row contacto">
+                            <div class="col-xs-6 emailAbout">
+                                <a class="hoverLinea" href="mailto:hola@joseluisgj.com">hola@joseluisgj.com</a>
+                            </div>
+                            <div class="col-xs-6 text-right social">
+
+                                <a class="hoverLinea" title="joseluisgj81" href="skype:joseluisgj81?chat"><i class="demo-icon icon-skype-1"></i></a>
+                                <a class="hoverLinea" title="joseluisgj" href="https://es.linkedin.com/in/joseluisgj" target="_blank"><i class="demo-icon icon-linkedin"></i></a>
+                                <a class="hoverLinea" title="@jose_luis_gj" href="https://twitter.com/jose_luis_gj" target="_blank"><i class="demo-icon icon-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>&nbsp;</p>
+            </div>
+
+        </section>
+        <!-- Overlay oscuro-->
+        <section class="darkOverlay"></section>
+        <!-- ANGULAR-VIEW / PROYECTO -->
+        <div id="ng-vista" ng-view></div>
+
+        <section id="bloque-fin-proyecto" class="info-group">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h5>{{ 'PROX-PROYECTO' | translate }}</h5>
+                        <h3><a href="" class="next-project-btn">Energy System</a></h3>
+
+                    </div>
+                    <img class="img-fondo-proyecto object-fit-ie-fix-footer" src="img/proyectos/energy/energy-fondo.jpg">
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <!--For fucking IE-->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="js/vendor/ofi.browser.js"></script>
+    <!--jQuery-->
+    <script src="js/vendor/jquery-2.1.1.js"></script>
+    <!--GSAP-->
+    <script src="js/vendor/gsap/TweenMax.min.js"></script>
+    <script src="js/vendor/gsap/TimelineMax.min.js"></script>
+    <script src="js/vendor/gsap/plugins/TextPlugin.min.js"></script>
+    <script src="js/vendor/gsap/plugins/ScrollToPlugin.min.js"></script>
+    <script src="js/vendor/gsap/plugins/CSSRulePlugin.min.js"></script>
+    <!--Preloader-->
+    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+    <!--ScrollMagic-->
+    <script src="js/vendor/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="js/vendor/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="js/vendor/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <!--Bootstrap-->
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery-breakpoint-check.min.js"></script>
+    <!--Pixi.js-->
+    <script src="js/vendor/pixi.min.js"></script>
+    <script src="js/vendor/pixie/ColorMatrixFilter2.js"></script>
+    <script src="js/vendor/pixie/BlurFilter.js"></script>
+    <script src="js/vendor/pixie/BlurXFilter.js"></script>
+    <script src="js/vendor/pixie/BlurYFilter.js"></script>
+    <script src="js/vendor/pixie/ColorMatrixFilter.js"></script>
+    <script src="js/vendor/pixie/DepthDisplacementFilter.js"></script>
+    <script src="js/vendor/pixie/DepthPerspectiveFilter.js"></script>
+    <script src="js/vendor/pixie/utils.js"></script>
+    <!--Depthy-->
+    <script src="js/vendor/DepthyViewer.js"></script>
+    <!--Angular-->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="js/vendor/angular/angular-translate.min.js"></script>
+    <script src="js/vendor/angular/preloader.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/modelData.js"></script>
+    <script src="js/factories/mainFactory.js"></script>
+    <script src="js/factories/eventsFactory.js"></script>
+    <script src="js/controllers/mainCtrl.js"></script>
+    <script src="views/project1.js"></script>
+    <script src="views/project2.js"></script>
+    <script src="views/project3.js"></script>
+    <script src="views/project4.js"></script>
+    <script src="js/components/version/version.js"></script>
+    <script src="js/components/version/version-directive.js"></script>
+    <script src="js/components/version/interpolate-filter.js"></script>
+</body>
+
+</html>

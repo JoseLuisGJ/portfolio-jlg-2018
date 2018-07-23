@@ -1,0 +1,6 @@
+{
+  "name": "WebJose_v2",
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

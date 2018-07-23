@@ -1,0 +1,880 @@
+.ang {
+    position: absolute;
+    z-index: 9999;
+    left: 50%;
+    top: 50px;
+    color: #fff;
+}
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+#{$a-tags} {
+    color: inherit;
+    text-decoration: none;
+    @include transition(all 0.3s ease-in-out);
+}
+
+#{$a-tags-hover} {
+    color: #fff;
+}
+
+#site-wrap {
+    //overflow: hidden;
+}
+
+.maskText {
+    overflow: hidden;
+}
+
+#lol {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    canvas {
+        position: absolute;
+        bottom: 0;
+        left: 57%;
+        @include transform(translateX(-50%));
+    }
+}
+
+#intro {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    z-index: 10;
+    background-color: #202020;
+    @include transition(all 0.4s ease-in-out);
+
+    #closeAboutSVG {
+        position: absolute;
+        z-index: 9999;
+        left: 13px;
+        top: 50%;
+        cursor: pointer;
+        @include transform(translateY(-50%));
+    }
+    .lineaCerrar {
+        display: block;
+        position: absolute;
+        left: 35px;
+        content: "";
+        width: 1px;
+        height: 50px;
+        background-color: #7B7B7B;
+        pointer-events: none;
+    }
+    #lineaCerrar1 {
+        top: 0;
+        bottom: auto;
+    }
+    #lineaCerrar2 {
+        bottom: 0;
+        top: auto;
+    }
+    .scrollDown {
+        @include transform(rotate(90deg));
+        @include transform-origin(15px 15px);
+        font-family: "Lato";
+        text-align: right;
+        font-weight: 200;
+        font-size: 18px;
+        color: #7B7B7B;
+        position: absolute;
+        left: 20px;
+        bottom: 125px;
+        display: block;
+        z-index: 1000;
+    }
+    .aboutMeBtn {
+        /* About me: */
+        @include transform-origin(15px 15px);
+        @include transform(rotate(90deg));
+        font-family: "Lato";
+        font-weight: 200;
+        font-size: 18px;
+        color: #7B7B7B;
+        position: absolute;
+        left: 20px;
+        top: 80px;
+        margin-top: -15px;
+        display: block;
+        z-index: 1000;
+        &:hover {
+            color: #fff;
+            &:after {
+                width: 250px;
+            }
+            &:before {
+                width: 250px;
+            }
+        }
+        #{$a-tags} {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: inherit;
+            text-decoration: none;
+            @include transition(color 0.4s ease-in-out);
+        }
+        #{$a-tags-hover} {
+            color: #fff;
+        }
+    }
+    .introContent {
+        z-index: 500;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        .claim {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            height: auto;
+            @include transform(translateY(-50%));
+            text-align: center;
+            h1 {
+                /* José Luis González: */
+                font-family: "Playfair Display";
+                font-weight: bold;
+                font-size: 57.67px;
+                color: #FFFFFF;
+                line-height: 72px;
+                margin-bottom: 5px;
+                overflow: hidden;
+                //            opacity: 0;
+                span {
+                    color: #A1A1A1;
+                    margin-right: 10px;
+                }
+            }
+            h2 {
+                /* UX / UI Designer & F: */
+                font-family: 'Lato';
+                font-weight: 200;
+                font-size: 33.49px;
+                color: #7B7B7B;
+                margin-top: 0;
+                margin-bottom: 5px;
+                //            opacity: 0;
+            }
+        }
+    }
+    .aboutMeInfo {
+        z-index: 9998;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        @include transform(translate(-50%, -50%));
+        h2 {
+            /* About me: */
+            font-family: "Playfair Display";
+            font-weight: normal;
+            font-size: 62px;
+            color: #FFFFFF;
+            margin-bottom: 40px;
+        }
+        p.lead {
+            /* En mis 12 años de ex: */
+            font-family: "Lato";
+            font-weight: 200;
+            font-size: 27px;
+            color: #C7C7C7;
+            margin-bottom: 40px;
+            b {
+                font-size: inherit;
+                font-weight: 300;
+                display: inline;
+                color: inherit;
+            }
+        }
+        .infoLarga {
+            /* He realizando tareas: */
+            font-size: 20px;
+            color: #C7C7C7;
+            font-family: "Lato";
+            font-weight: 300;
+            b {
+                font-size: inherit;
+                font-weight: 400;
+                display: inline;
+                color: inherit;
+            }
+            #{$a-tags} {
+                color: #8C8C8C;
+            }
+            #{$a-tags-hover} {
+                color: #fff;
+            }
+        }
+        .contacto {
+            padding-top: 70px;
+            color: #fff;
+            .emailAbout {
+                /* hola@joseluisgj.com: */
+                font-family: "Lato";
+                font-weight: 300;
+                font-size: 20px;
+                color: #7B7B7B;
+                padding-top: 5px;
+            }
+            .social {
+                a {
+                    margin-left: 8px;
+                }
+                font-size: 30px;
+                #{$a-tags} {
+                    color: #8C8C8C;
+                }
+                #{$a-tags-hover} {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .imgFondoIntro {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+    }
+    #scrollBtn {
+        cursor: pointer;
+        position: absolute;
+        bottom: 30px;
+        border-radius: 50%;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        border: 1px solid #7B7B7B;
+        display: none;
+        margin-left: -35px;
+        svg {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            @include transform(translate(-50%, -50%));
+        }
+    }
+}
+
+#proyecto-aguas-bloque3 {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #fff;
+    #img-app-aguas {
+        margin-left: -30px;
+    }
+}
+
+#proyecto-aguas-bloque4 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #F2F2F2;
+    &.energy {
+        background-color: #303030;
+    }
+    .contScreensApp {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        #img-screens-aguas1,
+        #img-screens-aguas2 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+
+#proyecto-aguas-bloque5 {
+     position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 165px;
+    background-image: url('../img/proyectos/aguas/aguas-fondo-instalacion2.jpg');
+    background-size: cover;
+    h3 {
+        color: #fff;
+    }
+    p {
+        font-family: 'Lato';
+        font-weight: 300;
+        font-size: 20px;
+        color: #FFFFFF;
+        line-height: 38px;
+    }
+    &.energy-bloque {
+        background-image: none !important;
+        background-color: #52CEBA;
+        h3 {
+            margin-top: 100px;
+            color: #505050;
+        }
+        p {
+            color: #505050;
+        }
+        .energy-img {
+            @include transform(translate(-15px, -225px));
+        }
+    }
+    &.zeendo-bloque {
+        background-image: none !important;
+        background-color: #89B1BB;
+        h3 {
+            margin-top: 100px;
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+        #zeendo-comp {
+            position: absolute;
+            left: -77px;
+            bottom: 9px;
+            width: 74%;
+            height: auto;
+            max-width: 1280px;
+        }
+        #texto-zeendo-comp {
+            z-index: 2;
+        }
+    }
+    &.muchosol-bloque {
+        background-image: none !important;
+        background-color: #ACC4D5;
+        h3 {
+            margin-top: 100px;
+            color: #fff;
+        }
+        p {
+            color: #fff;
+            margin-bottom: 28px;
+        }
+        #muchosol-comp {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 74%;
+            height: auto;
+            max-width: 1280px;
+        }
+        #texto-muchosol-comp {
+            z-index: 2;
+        }
+    }
+}
+
+#bloque-fin-proyecto {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 165px;
+    z-index: -1;
+    overflow: hidden;
+    background-color: #323232;
+    h5 {
+        font-family: "Lato";
+        font-weight: 300;
+        font-size: 28px;
+        color: #8E8E8E;
+        margin-top: 35px;
+        margin-left: 30px;
+        margin-bottom: -3px;
+    }
+    h3 {
+        font-family: "Playfair Display";
+        font-weight: normal;
+        font-size: 49px;
+        color: #8E8E8E;
+        margin-top: 3px;
+        margin-left: 30px;
+        &:before {
+            display: block;
+            height: 1px;
+            width: 30px;
+            background-color: #8E8E8E;
+            content: "";
+            position: absolute;
+            top: 95px;
+            left: 0;
+            pointer-events: none;
+        }
+        #{$a-tags} {
+            color: inherit;
+            text-decoration: none;
+            @include transition(all 0.3s ease-in-out);
+        }
+        #{$a-tags-hover} {
+            color: #fff;
+        }
+    }
+    .img-fondo-proyecto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0;
+    }
+}
+
+.fondoGris {
+    background-color: #f8f8f8;
+}
+
+.fondoGrisBlanco {
+    position: relative;
+    height: 600px;
+    text-align: center;
+    background: #f8f8f8;
+    @include linear-gradient(top,
+    #f8f8f8 0%,
+    #f8f8f8 75%,
+    #ffffff 75%,
+    #ffffff 100%);
+    img {
+        bottom: 30px;
+        width: 100%;
+        max-width: 775px;
+    }
+}
+
+.fondoBlanco {
+    position: relative;
+    background-color: #fff;
+    height: 1200px;
+    padding-top: 300px;
+    .energyMod1 {
+        margin-top: -415px;
+    }
+    .energyMod2 {
+        z-index: 3;
+    }
+    .energyMod3 {
+        margin-top: -40%;
+        //transform: translateY(-70%);
+    }
+    .energyMod4 {
+        @include transform(translateY(55px));
+        ///margin-top: -350px;
+        z-index: 5;
+        margin-top: -23%;
+    }
+    .zeendoMod1 {
+        @include transform(translate(30px, -300px));
+        img {
+            z-index: 1;
+        }
+    }
+    .muchosolMod1 {
+        margin-top: -250px;
+    }
+    .muchosolMod2 {
+        @include transform(translate(196px, -522px));
+        overflow: hidden;
+    }
+    &.fondoEnergy {
+        height: auto;
+    }
+    &.fondoZeendo {
+        height: 1400px;
+        overflow: hidden;
+    }
+    &.fondoMuchosol {
+        height: 1150px;
+        overflow: hidden;
+        margin-bottom: -45px;
+    }
+}
+
+.fondoAzul {
+    background-color: #B1D7E6;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        @include transform(translate(-50%, -50%));
+    }
+}
+
+.fondoVerde {
+    background-color: #45816F;
+    video {
+        border-radius: 0;
+        max-width: 900px;
+
+    }
+}
+
+.descripcion {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 20px;
+    color: #4A4A4A;
+    line-height: 38px;
+}
+
+.descripcion-proyecto {
+    position: relative;
+    height: 100vh;
+    padding-right: 0;
+    padding-left: 0;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    h2 {
+        font-family: 'Playfair Display';
+        font-weight: 600;
+        font-size: 46px;
+        color: #FFFFFF;
+        margin-bottom: 5px;
+        margin-top: 80px;
+    }
+    h3 {
+        font-family: 'Lato';
+        font-weight: 200;
+        font-size: 40px;
+        color: #FFFFFF;
+        margin-top: 10px;
+        margin-bottom: 55px;
+    }
+    ul {
+        font-family: "Lato";
+        font-weight: 300;
+        font-size: 24px;
+        color: #4A4A4A;
+        &.blanco {
+            color: #FFFFFF;
+        }
+    }
+    img {
+        position: absolute;
+        bottom: -40px;
+        right: -30px;
+    }
+    ul {
+        &.urls {
+            margin-top: 50px;
+            margin-bottom: 80px;
+            font-family: 'Lato';
+            font-weight: 300;
+            font-size: 19px;
+            color: #FFFFFF;
+        }
+    }
+    .fondoProyecto {
+        // background-image: url('../img/p-aguas-01.png');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+    }
+    .img-fondo-proyecto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+/* Overlay oscuro */
+
+.darkOverlay {
+    background: #000;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    @include backface-visibility(hidden);
+    display: block;
+    z-index: 9;
+    opacity: 0.9;
+}
+
+.msie .darkOverlay {
+    display: none !important;
+}
+
+
+/* Precargador */
+
+#precargador {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #202020;
+    color: #fff;
+    z-index: 9999;
+    .cont {
+        position: relative;
+        .barra {
+            text-align: right;
+            position: absolute;
+            margin-top: 39px;
+            height: 1px;
+            width: 0px;
+            left: 0;
+            background-color: #fff;
+        }
+        h4 {
+            font-family: "Playfair Display";
+            font-weight: bold;
+            font-size: 57.67px;
+            text-align: center;
+            color: #FFFFFF;
+            line-height: 72px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            padding-left: 15px;
+            padding-right: 15px;
+            opacity: 0;
+        }
+    }
+}
+
+#precargador2 {
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    @include transform(translateX(-50%) translateY(-50%));
+}
+
+
+/* Menu hamburguesa */
+
+#menuAllProjects {
+    cursor: pointer;
+    position: fixed;
+    top: 120px;
+    right: 23px;
+    z-index: 10;
+    h4 {
+        font-family: "Playfair Display";
+        font-weight: bold;
+        font-size: 14px;
+        color: #fff;
+        @include transform(rotate(90deg));
+        @include transform-origin(right);
+        position: absolute;
+        right: 15px;
+        width: 100px;
+        text-align: left;
+        display: inline-block;
+        &::before {
+            display: block;
+            content: "";
+            height: 1px;
+            width: 100px;
+            background-color: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            left: -110px;
+            top: 8px;
+        }
+    }
+}
+
+
+/* Menu hamburguesa */
+
+#breadcrumbs {
+    position: fixed;
+    top: 20px;
+    left: 33px;
+    z-index: 10;
+    width: 100%;
+    h4 {
+        /* Jose Luis González: */
+        font-family: "Lato";
+        text-align: right;
+        font-weight: 200;
+        font-size: 15px;
+        color: #fff;
+        @include transform(rotate(90deg));
+        @include transform-origin(left);
+        position: absolute;
+        text-align: left;
+        display: inline-block;
+        span.sub {
+            display: inline-block;
+            margin-left: 0px;
+            opacity: 0.7;
+        }
+    }
+}
+
+
+/* Menu Proyectos */
+
+#menuProyectos {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    //    background-image: url("../img/aguas-fondo-instalacion.jpg");
+    background-color: rgba(50, 50, 50, 0.98);
+    z-index: 9998;
+    #closeSVG {
+        opacity: 0.7;
+        position: absolute;
+        left: 50%;
+        @include transform(translateX(-50%));
+        top: 60px;
+        cursor: pointer;
+    }
+    ul {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        list-style-type: none;
+        @include transform(translateY(-50%));
+        li {
+            float: left;
+            clear: left;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: calc(50% - 30px);
+            transform: translateX(-50%);
+            /* wrap extended text*/
+            &.active {
+                //pointer-events: none;
+                .barra {
+                    left: 0%;
+                    width: 100%;
+                }
+            }
+            .barra {
+                position: absolute;
+                left: 0%;
+                top: 57%;
+                height: 1px;
+                width: 0%;
+                background-color: #fff;
+            }
+            a {
+                position: relative;
+                font-family: "Playfair Display";
+                font-weight: normal;
+                font-size: 62px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+            #{$a-tags} {
+                color: #fff;
+                text-decoration: none;
+                @include transition(all 0.3s ease-in-out);
+            }
+            #{$a-tags-hover} {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    .fondoMenuImgs {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+/* Flecha subir */
+
+#flechaSubir {
+    cursor: pointer;
+    position: fixed;
+    bottom: 90px;
+    right: -22px;
+    z-index: 10;
+    svg {
+        position: absolute;
+        top: -190px;
+        right: 54px;
+    }
+    h4 {
+        /* Jose Luis González: */
+        font-family: "Playfair Display";
+        font-size: 14px;
+        color: #fff;
+        @include transform(rotate(90deg));
+        @include transform-origin(right);
+        position: absolute;
+        right: 60px;
+        bottom: -80px;
+        width: 150px;
+        text-align: right;
+        display: inline-block;
+        font-weight: bold;
+    }
+}
+
+.hoverLinea {
+    position: relative;
+    padding: 0 10px 0 10px;
+    margin: 0 -10px 0 -10px;
+    .lineaHover {
+        pointer-events: none;
+        position: absolute;
+        left: 0;
+        top: 60%;
+        display: block;
+        content: "";
+        height: 1px;
+        width: 0%;
+        background-color: #fff;
+    }
+}
+
+.img-sombra {
+    -webkit-box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.36);
+}
